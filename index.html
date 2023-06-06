@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wellcome to Online Website Status Checker of SP18</title>
+  <title>SP18</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+    }
+
+    #status-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+
     .status {
-      font-weight: bold;
+      padding: 10px;
       margin-bottom: 10px;
+      border-radius: 4px;
+      font-weight: bold;
+      color: #fff;
     }
+
     .online {
-      color: green;
+      background-color: #2ecc71;
     }
+
     .offline {
-      color: red;
+      background-color: #e74c3c;
     }
   </style>
 </head>
 <body>
-  <h1>Website Status Checker</h1>
+  <h1>Sparkeighteen Tool Uptime Checker</h1>
   <div id="status-container"></div>
 
   <script>
@@ -40,8 +63,6 @@
         "https://jkapniparty.com",
         "https://sky101.in",
         "https://skyviewbyempyrean.com/",
-        "https://sumitshukla.co.in",
-        "http://sumitshukla.co.in",
         "https://www.hivedata.com",
         "https://anglerla.com",
         "https://www.anglerrestaurants.com/san-francisco",
@@ -50,8 +71,8 @@
         "https://copasonmarket.com",
         "https://www.deschoolonline.com",
         "https://deschool.ca",
-        "https://www.sparkeighteen.com",
-                      ]; // Add the URLs you want to check here
+        "https://www.sparkeighteen.com"
+      ]; // Add the URLs you want to check here
 
       const statusContainer = document.getElementById("status-container");
       statusContainer.innerHTML = "";
